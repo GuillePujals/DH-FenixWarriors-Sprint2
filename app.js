@@ -25,6 +25,10 @@ app.get('/register/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/register.html'));
 });
 
+app.get('/template/', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/template.html'));
+});
+
 app.listen(port, () => {
     console.log('Página de alquiler de casas '+ port);
 });
