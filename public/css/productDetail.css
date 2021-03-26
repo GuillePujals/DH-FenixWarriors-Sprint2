@@ -1,0 +1,196 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-flow: row wrap;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container-all{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden; /*para que la imagen no se sobrepase*/
+    flex: 1 1 auto;
+}
+
+/*esta sección muestra las imagenes*/
+.slide{
+    display: flex; /*las ajusta*/
+    transform: translate3d(0, 0, 0); 
+    transition: all 600ms; 
+    animation-name: autoplay; /*Definimos el nombre de la animación*/
+    animation-duration: 6.5s; /*los s de duración de la animación*/
+    animation-direction: alternate; /*la dirección de la animación*/
+    animation-fill-mode: forwards; /*por dónde comienza la animación*/
+    animation-iteration-count: infinite; /*será infinita la animación*/
+}
+
+/*c/u de los slides de las imagenes*/
+.item-slide{ 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; /*para que abarque todo el espacio demenera vert*/
+    flex-grow: 0; /*para que abarque todo el espacio demenera horiz*/
+    max-width: 100%;
+}
+
+/*config. el espacio de paginación*/
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;/*ajusta c/img a su contenedor padre*/
+    align-items: center; /*centra el contenido*/
+    justify-content: center;
+    width: 100%;
+}
+
+/*los ítems de la paginación*/
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white; /*borde sólido y blanco*/
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden; /*recorta la img*/
+    cursor: pointer;  /*al posicionarse arriba cambia el curso a puntero*/
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px; /*margen vertical de 0 y horiz de 10px*/
+    text-align: center;
+    transition: all 300ms;
+}
+
+/*en el evento hover, cuando me hago click, se transdorma al doble del tamaño*/
+.pagination-item:hover{
+    transform: scale(2);
+}
+
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0; /*para que no se muestren las img*/
+    transition: all 300ms;
+}
+
+/*cuando paso el mouse, si se muestra la img*/
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*detengo la animación cuando hago click en la paginación*/
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+/*Luego de hacer click pone en blanco la img*/
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);/*hace una transición*/
+}
+
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+.datos{
+    border-top:#ebebeb solid 2px;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 2 1 auto;
+    margin-top: 3px;
+}
+    .resumen{
+        flex: 1 1 67%;
+    }
+    .condiciones{
+        flex: 1 1 27%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        margin: 5px;
+    }
+        .precio-tot{
+            color:  #39b54a;
+            font-weight: 700;
+        }
+
+.ubicacion{
+    border-top:#ebebeb solid 2px;
+    padding: 5px;
+    margin-top: 5px;
+    flex: 1 1 auto;
+}
+    .ubicacion iframe{
+        width: 100%;
+        height: 100%;
+    }
+
+.conditions{
+    border-top:#ebebeb solid 2px;
+    padding: 5px;
+    margin-top: 5px;
+    flex: 1 1 auto;
+}
+
+/*creamos un keyframes para generar la animación*/
+@keyframes autoplay{
+    33%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    
+    66%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    100%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    }
+}
+
+@media(min-width: 860px){
+    body {
+        font-size: 20px;        
+    }
+   
+}
+
+@media(min-width: 1000px){
+    body {
+        font-size: 24px;        
+    }
+   
+}
