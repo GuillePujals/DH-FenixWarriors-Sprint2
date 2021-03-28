@@ -95,6 +95,7 @@ section{
             .icono-red i{
                 color: #3295ce;
                 margin: 0px 3px 0px 3px;
+                
             }
         
         .menu-footer{
@@ -111,6 +112,14 @@ section{
             .lista-footer {
                 align-self: start;
             }
+                .lista-footer a{
+                    display: block;
+                    text-decoration: none;
+                    color:rgb(150, 147, 147)
+                }
+                .lista-footer h4{
+                    margin-bottom: 5px;
+                }
             
         .legales{
             display:flex;
@@ -135,7 +144,7 @@ section{
             text-decoration: none;
             font-weight: bold;
         }
-
+   
             
 }
             
