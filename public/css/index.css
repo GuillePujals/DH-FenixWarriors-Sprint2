@@ -1,0 +1,162 @@
+/* main body - caffarone */
+
+.main-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sub-main-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1500px;
+    height: 300px;
+    background-image: url('/images/mdq5.jpg');
+    background-position: center;
+}
+
+.sub-main-body p {
+    color: grey;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 30px;
+    max-height: 50px;
+}
+
+.cuando {
+    display: none; 
+    width: 100px;}
+.cuantos {
+    display: none; 
+    width: 30%;
+    max-width: 220px;
+    min-width: 160px;}
+#buscar {
+    display: none;
+    width: 30%;
+    height: 30px;
+    max-width: 90px;
+    min-width: 160px;
+}
+
+.donde {
+    display: flex;
+    color: grey;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+    max-width: 220px;
+    min-width: 160px;
+    max-height: 50px;
+}
+
+.donde i {margin-right: 10px;}
+
+.titulo-destinos {
+    width: 100vw;
+    text-align: left;
+    font-weight: bolder;
+    padding: 10px;
+}
+.destinos-destacados p {
+    color: white;
+    background-color: rgb(11, 130, 204);
+    margin-top: 20px;
+    max-width: 120px;
+    height: 35px;
+    text-align: center;
+    padding: 8px;
+    font-weight: bolder;
+}
+
+.destinos-destacados article{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 769px;
+    width: 100vw;
+    height: 300px;
+    background-position: center;
+    background-size: auto;
+    border: solid 6px white;
+}
+
+.destindo-destacado-1{
+    background-image: url('/images/mdq8.jpg');
+    background-size: 1000px 500px;
+}
+.destindo-destacado-2{
+    background-image: url('/images/carilo4.jpg');
+    background-size: 10px;
+}
+.destindo-destacado-3{
+    background-image: url('/images/gesell3.jpg'); 
+    background-size: inherit;
+}
+
+.suscripcion {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.suscripcion p {
+    border: lightgray solid 2px;
+    border-radius: 5px;
+    color: lightgray;
+    font-size: 15px;
+    padding: 3px;
+    max-width: 200px;
+}
+
+@media (min-width:769px){
+    .accesos{
+        display: block;  
+    }
+    .sub-main-body p {
+        margin-right: 5px;
+        display: flex;
+        
+    }
+    #buscar {
+        display: flex;
+        color: white;
+        background-color: rgb(11, 130, 204);
+    }
+    
+    .destinos-destacados {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   .destinos-destacados article{
+    max-width: 48vw;
+   }
+    
+}
+            
+@media(min-width: 1280px){
+    
+    .logo{
+        width: 140px;
+        height: 100px;
+    }
+    
+    .destinos-destacados {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   .destinos-destacados article{
+    max-width: 30vw
+   }
+ 
+
+   
+
+}
