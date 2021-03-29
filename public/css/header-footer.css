@@ -49,40 +49,41 @@
         .hamburger-button{
             color: #3295ce;
             background-color: 8cc9ec;     
-            padding: 2px 3px;
-            
-            
-
+            padding: 2px 3px;        
         }
 
-
-
-    .main-navbar{
-        display: none;
-        margin-top: 4px;
-    }
-
-        .main-navbar ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        .menu-hamburger{
+            display: none;
+            
+        }
+        .hamburger-button:hover{
+            background-color: #b0d4e9;
         }
 
-            .main-navbar a {
-                text-decoration: none;
-                color: #3295ce;
-                display: inline-block;
-                padding: 5px 0;
-                font-size: 17px; 
-            }
+        .hamburger-button:hover > ul {
+            display: block;
+        }
+            .menu-hamburger li{
+                list-style: none;
+                background-color: #b0d4e9;
+                padding: 10px;
+                
+                }
+
+                .menu-hamburger a{
+                    text-decoration: none;
+                    
+                }
+   
+
+        
+
+            
 section{
     margin-top: 60px;
 }
 
-.footer{
-    
-    
-}
+
     .redes {
         display: flex;
         padding-left: 30vw;
@@ -139,6 +140,8 @@ section{
         display: block;
                    
     }
+}
+
 
         .accesos a{
             color: #3295ce;
@@ -147,7 +150,7 @@ section{
         }
            
             
-}
+
             
 @media(min-width: 1000px){
     .nombre-logo{

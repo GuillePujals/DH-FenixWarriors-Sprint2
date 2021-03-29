@@ -253,12 +253,12 @@
                         }
                         .form-datos-pago{
                         padding: 10px 0 10px 10px;
-                        
-                        width: 90%%;
+                        width: 90%;
                         flex-flow: row wrap;
                         margin-top: 0;
-                        border:solid #3295ce 1px
+                        border:solid #3295ce 1px;
                         }
+
                         .form-datos-pago label{
                             margin-right:  10px;
                         }
@@ -274,10 +274,7 @@
                             margin-left: 5px;
                         }
   
-.footer{
-    
-    
-}
+
     .redes {
         display: flex;
         padding-left: 30vw;
