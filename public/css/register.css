@@ -77,11 +77,13 @@
             }
 
 /*================== Sección principal =======================*/
+.form{
+    background-color: gainsboro;
+}
 .register{
     padding: 20px 15px;
     margin-top: 50px;
     text-align: center;
-    background-color: gainsboro;
 }
 .control-formulario{
     margin-bottom: 15px;
@@ -207,6 +209,13 @@
             color: #3295ce;
             text-decoration: none;
             font-weight: bold;
+        }
+    .form{
+        justify-content: center;
+        display: flex;
+    }
+        .register{
+            width: 500px;
         }
 }
             
