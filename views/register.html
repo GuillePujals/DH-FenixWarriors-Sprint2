@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <script src="https://kit.fontawesome.com/da86db1aac.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Alquier de casas</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <h2>
+                <a href="#" class="hamburger-button"><i class="fas fa-bars"></i></a>
+            </h2>
+            <div class="logo-completo">
+                <img src="/images/logo-casas-alquiler.jpg" alt="" class="logo">
+                <h1 class="nombre-logo">Serena</h1>
+            </div>
+            <div class="accesos">
+                <a href="">Publicar</a>
+                <a href="">Acceder</a>
+            </div>
+        </div>
+    </header>
+    
+    <form method="POST" action="/" class="register">
+        <div class="control-formulario">
+            <input type="text" placeholder="Nombre y Apellido" name="apeynom" class="control" required minlength="3">
+        </div>            
+        <div class="control-formulario">
+            <input type="text" placeholder="Nombre de usuario" name="user" class="control" required minlength="3">
+        </div>            
+        <div class="control-formulario">
+            <input type="email" placeholder="E-mail" name="email" class="control" required>
+        </div>            
+        <div class="control-formulario">
+            <input type="text" placeholder="Teléfono" name="telefono" class="control" required>
+        </div>            
+        <div class="control-formulario">
+            <label class="label">Fecha de nacimiento</label>
+            <input type="date" placeholder="mm/dd/yyyy" name="f_nacimiento" class="control" required>
+        </div>            
+        <div class="perfil_cont">
+            <label class="label">Perfil de usuario</label>
+            <label>
+            <input type="radio" 
+                name="perfil_usr" class="perfil">Para publicar
+            </label>
+            <label>
+            <input type="radio" 
+                name="perfil_usr" class="perfil">Para alquilar
+            </label>
+        </div>            
+        <div class="intereses">
+            <label  class="label">Intereses</label>
+            <label class="check"><input type="checkbox"  name="interes" value="electro">Casas</label>
+            <label class="check"><input type="checkbox"  name="interes" value="moda">Departamentos</label>
+            <label class="check"><input type="checkbox"  name="interes" value="hogar">Hoteles</label>
+            <label class="check"><input type="checkbox"  name="interes" value="jugeteria">Hosterías</label>
+            <label class="check"><input type="checkbox"  name="interes" value="vida-sana">Aparts</label>
+        </div>
+        <div class="control-formulario">
+            <input type="password" placeholder="Ingrese la password" name="password" class="control" required minlength="3">
+        </div>            
+        <div class="control-formulario">
+            <input type="password" placeholder="Repita la password" name="password" class="control" required minlength="3">
+        </div>            
+        <div class="buttons">
+             <button type="submit" class="boton-formulario">Enviar</button>
+            <button type="reset" class="boton-formulario">Reset</button>
+        </div>
+       
+    </form>
+
+    <footer class="footer">
+        <div class="redes">
+            <a class="icono-red" href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a class="icono-red" href="https://www.facebook.com/">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="icono-red" href="https://www.instagram.com/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a class="icono-red" href="https://twitter.com/">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+        </div>
+        <nav class="menu-footer">
+            
+            <i class="fas fa-caret-down"></i>
+            <a type="button" style="display: block;"></a>
+
+            <div class="lista-footer">
+                <h4>Principal</h4>
+                <a href="/">Inicio</a>    
+                <a href="/contacto">Cantacto</a>
+                <a href="/publicar">Publicar</a>
+                <a href="/blog">Blog</a> 
+                <h4>Secciones</h4>
+                <a href="/ofertas">Ofertas próximas</a>
+                <a href="/escapadasCercanas">Escapadas Cercanas</a>
+                <a href="/sorteos">Sorteos</a>  
+                <a href="/feriados">Feriados</a>            
+            </div>
+        </nav>
+
+
+        <div class="legales">
+            <i class="far fa-copyright">
+                <p>2021 Copyright</p>
+            </i>
+            <p>Condiciones</p>
+        </div>
+    </footer>
+</body>
+
+</html>
