@@ -57,92 +57,141 @@
 
 
 
+    .main-navbar{
+        display: none;
+        margin-top: 4px;
+    }
 
+        .main-navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
+            .main-navbar a {
+                text-decoration: none;
+                color: #3295ce;
+                display: inline-block;
+                padding: 5px 0;
+                font-size: 17px; 
+            }
 
-
-
-.container{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 3px;
-    font-family: Roboto;
-    font-size: 12px;
+/*================== Sección principal =======================*/
+.form{
+    background-color: #b0d4e9;
 }
-
-img{
-    max-width: 100%;
-}
-
-.container-all{
-    position: sticky;
-    max-width: 1000px;
-    width: 100%;
-    border-radius: 6px;
-    overflow: hidden; /*para que la imagen no se sobrepase*/
-    flex: 1 1 auto;
-}
-
-/*esta sección muestra las imagenes*/
-.slide{
-    display: flex; /*las ajusta*/
-    transform: translate3d(0, 0, 0); 
-    transition: all 600ms; 
-    animation-name: autoplay; /*Definimos el nombre de la animación*/
-    animation-duration: 6.5s; /*los s de duración de la animación*/
-    animation-direction: alternate; /*la dirección de la animación*/
-    animation-fill-mode: forwards; /*por dónde comienza la animación*/
-    animation-iteration-count: infinite; /*será infinita la animación*/
-}
-
-/*c/u de los slides de las imagenes*/
-.item-slide{ 
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0; /*para que abarque todo el espacio demenera vert*/
-    flex-grow: 0; /*para que abarque todo el espacio demenera horiz*/
-    max-width: 100%;
-}
-
-/*config. el espacio de paginación*/
-.pagination{
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    display: flex;
-    flex-wrap: wrap;/*ajusta c/img a su contenedor padre*/
-    align-items: center; /*centra el contenido*/
-    justify-content: center;
-    width: 100%;
-}
-
-/*los ítems de la paginación*/
-.pagination-item{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid white; /*borde sólido y blanco*/
-    width: 16px;
-    height: 16px;
-    border-radius: 4px;
-    overflow: hidden; /*recorta la img*/
-    cursor: pointer;  /*al posicionarse arriba cambia el curso a puntero*/
-    background: rgba(255, 255, 255, 0.5);
-    margin: 0 10px; /*margen vertical de 0 y horiz de 10px*/
+.register{
+    padding: 20px 15px;
+    margin-top: 50px;
     text-align: center;
-    transition: all 300ms;
+}
+.control-formulario{
+    margin-bottom: 15px;
+
 }
 
+.buttons{
+    display: flex;
+    }
+
+    .boton-formulario{
+        background-color:#1259c3;
+        border: none;
+        width: 100%;
+        font-size: 15px;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 4px;
+        height: 35px;
+        margin: 2px;
+        position: relative;
+        top: 50px;
+        left: 100px;
+        }
 
 
 
+/*================== Footer =======================*/
+.footer{
+    
+    
+}
+    .redes {
+        display: flex;
+        padding-left: 30vw;
+        padding-right: 30vw;
+        margin-top: 3%;
+    }
+        .icono-red{
+            flex: 1 1 auto;
+        }
+            .icono-red i{
+                color: #3295ce;
+                margin: 0px 3px 0px 3px;
+                
+            }
+        
+        .menu-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-top: #3295ce solid 1px;
+            margin-top: 3%;
+        }
+            .menu-footer i{
+                color:#3295ce;
 
-.Login{
-margin: 15px;
-padding: 5px;
-width:100%;
-text-align: center;
+            }
+            .lista-footer {
+                align-self: start;
+            }
+                .lista-footer a{
+                    display: block;
+                    text-decoration: none;
+                    color:rgb(150, 147, 147)
+                }
+                .lista-footer h4{
+                    margin-bottom: 5px;
+                }
+            
+        .legales{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            .legales i{
+                display: flex;
+                align-items: center;
+            }
+                .legales p{
+                    font-family:Roboto;
+                }
+
+@media (min-width:860px){
+    .accesos{
+        display: block;
+                   
+    }
+        .accesos a{
+            color: #3295ce;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    .form{
+        justify-content: center;
+        display: flex;
+    }
+        .register{
+            width: 500px;
+        }
+}
+            
+@media(min-width: 1000px){
+    .nombre-logo{
+        font-size: 40px;
+    }
+
+    .accesos{
+        font-size: 20px;
+    }
 }
