@@ -100,73 +100,55 @@ section{
 }
 
 
-    .redes {
+.redes {
+    display: flex;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    margin-top: 3%;
+}
+    .icono-red{
+        flex: 1 1 auto;
+    }
+        .icono-red i{
+            color: #3295ce;
+            margin: 0px 3px 0px 3px;
+        }
+    
+    .menu-footer{
         display: flex;
-        padding-left: 30vw;
-        padding-right: 30vw;
+        flex-direction: column;
+        align-items: center;
+        border-top: #3295ce solid 1px;
         margin-top: 3%;
     }
-        .icono-red{
-            flex: 1 1 auto;
+        .menu-footer i{
+            color:#3295ce;
         }
-            .icono-red i{
-                color: #3295ce;
-                margin: 0px 3px 0px 3px;
-                
+        .lista-footer {
+            align-self: start;
+        }
+            .lista-footer a{
+                display: block;
+                text-decoration: none;
+                color:rgb(150, 147, 147)
+            }
+            .lista-footer h4{
+                margin-bottom: 5px;
             }
         
-        .menu-footer{
+    .legales{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .legales i{
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-top: #3295ce solid 1px;
-            margin-top: 3%;
-        }
-            .menu-footer i{
-                color:#3295ce;
-
-            }
-            .lista-footer {
-                align-self: start;
-            }
-                .lista-footer a{
-                    display: block;
-                    text-decoration: none;
-                    color:rgb(150, 147, 147)
-                }
-                .lista-footer h4{
-                    margin-bottom: 5px;
-                }
-            
-        .legales{
-            display:flex;
-            justify-content: space-between;
             align-items: center;
         }
-            .legales i{
-                display: flex;
-                align-items: center;
+            .legales p{
+                font-family:Roboto;
             }
-                .legales p{
-                    font-family:Roboto;
-                }
-
-                .icono-red i{
-                    font-size: 30px;
-                }
-            
-                    .accesos a{
-                        color: #3295ce;
-                        text-decoration: none;
-                        font-weight: bold;
-                    }
-                       
-                .lista-footer{
-                    display:flex;
-                    justify-content: space-around;
-                    width: 100%;
-                }
-            
+        
 /* ==========Fin Header y Footer ================== */
 .container{
     display: flex;

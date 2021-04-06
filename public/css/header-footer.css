@@ -180,7 +180,7 @@ section{
         width: 100%;
     }
             
-
+}
             
 @media(min-width: 1000px){
     .nombre-logo{
@@ -198,4 +198,5 @@ section{
             max-height: 60px;
             max-width: 100px;
         }
+
 }
