@@ -16,16 +16,32 @@
 <body>
     <header class="main-header">
         <div class="top-bar">
-            <h2>
-                <a href="#" class="hamburger-button"><i class="fas fa-bars"></i></a>
-            </h2>
+            <input type="checkbox" id="main-hamburger">
+            <label for="main-hamburger"><i class="fas fa-bars"></i>
+            </label>
+            <nav class="menu-hamburger">
+                <ul>
+                    <li><a href="/login">Inicio sesión</a></li>
+                    <li><a href="/register">Registrate</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="">Ofertas próximas</a></li>
+                    <li><a href="">Escapadas Cercanas</a></li>
+                    <li><a href="">Guías turísticas</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Publicar</a></li>
+                </ul>
+            </nav>
+
             <div class="logo-completo">
                 <img src="/images/logo-casas-alquiler.jpg" alt="" class="logo">
                 <h1 class="nombre-logo">Serena</h1>
             </div>
+            <a href="/productCart" class="icono-carrito">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
             <div class="accesos">
-                <a href="">Publicar</a>
-                <a href="">Acceder</a>
+                <a href="/login" class="login">Logueate</a>
+                <a href="/register" class="register">Registrate</a>
             </div>
         </div>
     </header>
@@ -39,15 +55,15 @@
             <div class="slide">
 
                 <div class="item-slide">
-                    <img src="Images/img1.jpg">
+                    <img src="Images/foto1.jpg">
                 </div>
 
                 <div class="item-slide">
-                    <img src="Images/img2.jpg">
+                    <img src="Images/foto2.jpg">
                 </div>
 
                 <div class="item-slide">
-                    <img src="Images/img3.jpg">
+                    <img src="Images/foto3.jpg">
                 </div>
 
             </div>
@@ -55,15 +71,15 @@
             <div class="pagination">
 
                 <label class="pagination-item" for="1">
-                    <img src="Images/img1.jpg">
+                    <img src="Images/foto1.jpg">
                 </label>
 
                 <label class="pagination-item" for="2">
-                    <img src="Images/img2.jpg">
+                    <img src="Images/foto2.jpg">
                 </label>
 
                 <label class="pagination-item" for="3">
-                    <img src="Images/img3.jpg">
+                    <img src="Images/foto3.jpg">
                 </label>
 
             </div>
@@ -81,6 +97,9 @@
                 </div>
                 <p class="comentario">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat, veniam
                     non sequi commodi maxime debitis rem cupiditate fugiat iste quidem quo sapiente? Id assumenda vel
+                    labore nulla perspiciatis animi.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit quaerat, veniam
+                    non sequi commodi maxime debitis rem cupiditate fugiat iste quidem quo sapiente? Id assumenda vel
                     labore nulla perspiciatis animi.</p>
                 <div class="services">
                     <i class="fas fa-swimmer"></i>
@@ -89,87 +108,114 @@
                     <i class="fas fa-car"></i>
                 </div>
             </article>
-            <article class="condiciones">
-                <p class="precio">$3.000 por noche</p>
-                <p class="precio-tot">$18.000 total</p>
-                <p class="fecha">1 al 10 de Marzo</p>
-                <p class="personas">2 adultos 2 menores</p>
-            </article>
-        </section>
-        <section class="conditions">
-            <h4>Condiciones</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deleniti ut neque provident ullam,
-                voluptates consectetur, consequuntur assumenda amet temporibus maxime, deserunt doloribus sit ducimus
-                vitae necessitatibus soluta illum nobis!</p>
-        </section>
-        <section class="main-pagos">
-            <div class="main-datos-personales">
-                <h4 class="titulo-datos">Datos personales</h4>
-                <div class="datos-personales">
-                    <h5 class="titulo">Nombre y Apellido:</h5>
-                    <h5 class="dato">Juan Carlos Perez</h5>
-                    <h5 class="titulo">E-mail:</h5>
-                    <h5 class="dato">juancarlosperez@gmail.com</h5>
-                    <h5 class="titulo">Pais de Recidencia:</h5>
-                    <h5 class="dato">Argentina</h5>
-                    <h5 class="titulo">celular:</h5>
-                    <h5 class="dato">+54-11-38574086</h5>
-                </div>
-            </div>
-
-            <div class="datos-pago">
-                <h4>Datos para el pago:</h4>
+            <div class="info-cont">
                 <form action="/procesrPago" method="POST" class="form-datos-pago">
-                    <div class="titular-tta">
-                        <label>Titular de la Tarjeta:</label>
-                        <input type="text" name="titularTarjeta" class="control-pago">
-                    </div>
-                    <div class="tipo-tta">
-                        <label>Tipo de Tarjeta de Crédito:</label>
-                        <select name="tipoTarjeta" class="control-pago">
-                            <option value="visa">Visa</option>
-                            <option value="master">Mastercard</option>
-                            <option value="American">American Express</option>
-                        </select>
-                    </div>
-                    <div class="fecha-expir">
-                        <label>Fecha de expiración:</label>
-                        <select name="mesExpiracion" class="control-pago">
-                            <option value="ene">Enero</option>
-                            <option value="feb">Febrero</option>
-                            <option value="mar">Marzo</option>
-                            <option value="abr">Abril</option>
-                            <option value="may">Mayo</option>
-                            <option value="jun">Junio</option>
-                            <option value="jul">Julio</option>
-                            <option value="ago">Agosto</option>
-                            <option value="sept">Septiembre</option>
-                            <option value="oct">Octubre</option>
-                            <option value="nov">Noviembre</option>
-                            <option value="dic">Diciembre</option>
-                        </select>
+                    <h4>Condiciones del alquiler:</h4>
+                    <div class="cond-alq">
+                        <div class="datos-alq">
+                            <div class="fecha-alq">
+                                <div class="ingreso">
+                                    <label>Fecha ingreso:</label>
+                                    <input type="date" name="fechaingreso">
+                                </div>
+                                <div class="egreso">
+                                    <label>Fecha egreso:</label>
+                                    <input type="date" name="fechaegreso">
+                                </div>
+                            </div>
+                            <div class="cant-personas">
+                                <div class="adultos">
+                                    <label>Adultos:</label>
+                                    <input type="number" name="cantadultos">
+                                </div>
+                                <div class="ninos">
 
-                        <label class="separador">/</label>
-                        <select name="mesExpiracion" class="control-pago">
-                            <option value="2021">2021</option>
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024">2024</option>
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                            <option value="2029">2029</option>
-                            <option value="2030">2030</option>
-                            <option value="2031">2031</option>
-                            <option value="2032">2032</option>
-                        </select>
+                                    <label>Niños:</label>
+                                    <input type="number" name="cantninos">
+                                </div>
+                            </div>
+                        </div>
+                        <article class="condiciones">
+                            <p class="precio">$3.000 por noche</p>
+                            <p class="precio-tot">$18.000 total</p>
+                        </article>
+                        <article class="main-datos-personales">
+                            <h4 class="titulo-datos">Datos personales</h4>
+                            <div class="datos-personales">
+                                <h5 class="titulo">Nombre y Apellido:</h5>
+                                <h5 class="dato">Juan Carlos Perez</h5>
+                                <h5 class="titulo">E-mail:</h5>
+                                <h5 class="dato">juancarlosperez@gmail.com</h5>
+                                <h5 class="titulo">Pais de Recidencia:</h5>
+                                <h5 class="dato">Argentina</h5>
+                                <h5 class="titulo">celular:</h5>
+                                <h5 class="dato">+54-11-38574086</h5>
+                            </div>
+                        </article>
                     </div>
-                    <div class="codigo-cvc">
-                        <label>Código CVC:</label>
-                        <input type="number" name="codigoCvc" class="control-pago-cvc">
+                    <h4>Datos para el pago:</h4>
+                    <div class="datos-pago">
+
+                        <div class="titular-tta">
+                            <label>Titular de la Tarjeta:</label>
+                            <input type="text" name="titularTarjeta" class="control-pago">
+                        </div>
+                        <div class="tipo-tta">
+                            <label>Tipo de Tarjeta de Crédito:</label>
+                            <select name="tipoTarjeta" class="control-pago">
+                                <option value="visa">Visa</option>
+                                <option value="master">Mastercard</option>
+                                <option value="American">American Express</option>
+                            </select>
+                        </div>
+                        <div class="fecha-expir">
+                            <label>Fecha de expiración:</label>
+                            <select name="mesExpiracion" class="control-pago">
+                                <option value="ene">Enero</option>
+                                <option value="feb">Febrero</option>
+                                <option value="mar">Marzo</option>
+                                <option value="abr">Abril</option>
+                                <option value="may">Mayo</option>
+                                <option value="jun">Junio</option>
+                                <option value="jul">Julio</option>
+                                <option value="ago">Agosto</option>
+                                <option value="sept">Septiembre</option>
+                                <option value="oct">Octubre</option>
+                                <option value="nov">Noviembre</option>
+                                <option value="dic">Diciembre</option>
+                            </select>
+
+                            <label class="separador">/</label>
+                            <select name="mesExpiracion" class="control-pago">
+                                <option value="2021">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                            </select>
+                        </div>
+                        <div class="codigo-cvc">
+                            <label>Código CVC:</label>
+                            <input type="number" name="codigoCvc" class="control-pago-cvc">
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">reset</button>
                     </div>
                 </form>
+
+
+
+
+
             </div>
         </section>
     </main>
@@ -194,16 +240,24 @@
             <a type="button" style="display: block;"></a>
 
             <div class="lista-footer">
-                <h4>Principal</h4>
-                <a href="/">Inicio</a>
-                <a href="/contacto">Cantacto</a>
-                <a href="/publicar">Publicar</a>
-                <a href="/blog">Blog</a>
-                <h4>Secciones</h4>
-                <a href="/ofertas">Ofertas próximas</a>
-                <a href="/escapadasCercanas">Escapadas Cercanas</a>
-                <a href="/sorteos">Sorteos</a>
-                <a href="/feriados">Feriados</a>
+                <div class="ul-principal">
+                    <h4>Principal</h4>
+                    <ul type="none">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/contacto">Cantacto</a></li>
+                        <li><a href="/publicar">Publicar</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="ul-secciones">
+                    <h4>Secciones</h4>
+                    <ul type="none">
+                        <li><a href="/ofertas">Ofertas próximas</a></li>
+                        <li><a href="/escapadasCercanas">Escapadas Cercanas</a></li>
+                        <li><a href="/sorteos">Sorteos</a></li>
+                        <li><a href="/feriados">Feriados</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
