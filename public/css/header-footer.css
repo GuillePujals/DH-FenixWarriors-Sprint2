@@ -10,7 +10,7 @@
     top: 0;
     margin: 0;
     padding: 10px 0;
-    width:95vw;
+    width: 100vw;
 }
     .top-bar{
         display: flex;
@@ -93,12 +93,12 @@
             .login{
                 margin-right: 10px;
             }
-         
+/*================== Sección principal =======================*/         
 section{
     margin-top: 60px;
 }
 
-
+/*================== footer =======================*/
     .redes {
         display: flex;
         padding-left: 30vw;
@@ -163,7 +163,7 @@ section{
         display: block;
                    
     }
-}
+
     .icono-red i{
         font-size: 30px;
     }
