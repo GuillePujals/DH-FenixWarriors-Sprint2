@@ -161,11 +161,11 @@
 
                             <div class="titular-tta">
                                 <label>Titular de la Tarjeta:</label>
-                                <input type="text" name="titularTarjeta" class="control-pago">
+                                <input type="text" name="titularTarjeta" class="control-pago" required>
                             </div>
                             <div class="tipo-tta">
                                 <label>Tipo de Tarjeta de Crédito:</label>
-                                <select name="tipoTarjeta" class="control-pago">
+                                <select name="tipoTarjeta" class="control-pago" required>
                                     <option value="visa">Visa</option>
                                     <option value="master">Mastercard</option>
                                     <option value="American">American Express</option>
@@ -173,7 +173,7 @@
                             </div>
                             <div class="fecha-expir">
                                 <label>Fecha de expiración:</label>
-                                <select name="mesExpiracion" class="control-pago">
+                                <select name="mesExpiracion" class="control-pago" required>
                                     <option value="ene">Enero</option>
                                     <option value="feb">Febrero</option>
                                     <option value="mar">Marzo</option>
@@ -189,7 +189,7 @@
                                 </select>
 
                                 <label class="separador">/</label>
-                                <select name="mesExpiracion" class="control-pago">
+                                <select name="mesExpiracion" class="control-pago" required>
                                     <option value="2021">2021</option>
                                     <option value="2022">2022</option>
                                     <option value="2023">2023</option>
@@ -206,7 +206,7 @@
                             </div>
                             <div class="codigo-cvc">
                                 <label>Código CVC:</label>
-                                <input type="number" name="codigoCvc" class="control-pago-cvc">
+                                <input type="number" name="codigoCvc" class="control-pago-cvc" required>
                             </div>
                         </div>
                     </div>
