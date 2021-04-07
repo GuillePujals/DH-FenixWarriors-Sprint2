@@ -100,6 +100,7 @@ section{
 }
 
 
+/*================== footer =======================*/
 .redes {
     display: flex;
     padding-left: 30vw;
@@ -112,6 +113,7 @@ section{
         .icono-red i{
             color: #3295ce;
             margin: 0px 3px 0px 3px;
+            
         }
     
     .menu-footer{
@@ -123,6 +125,7 @@ section{
     }
         .menu-footer i{
             color:#3295ce;
+
         }
         .lista-footer {
             align-self: start;
@@ -145,9 +148,11 @@ section{
             display: flex;
             align-items: center;
         }
-            .legales p{
-                font-family:Roboto;
-            }
+        .legales p{
+            font-family:Roboto;
+            font-size: 12px;
+               
+        }
         
 /* ==========Fin Header y Footer ================== */
 .container{
@@ -350,7 +355,22 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
         display: block;
                    
     }
-   
+    .icono-red i{
+        font-size: 30px;
+    }
+    
+        .accesos a{
+            color: #3295ce;
+            text-decoration: none;
+            font-weight: bold;
+        }
+           
+    .lista-footer{
+        display:flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+       
 }
 
 @media(min-width: 1000px){
