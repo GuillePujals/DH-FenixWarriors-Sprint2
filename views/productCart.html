@@ -116,22 +116,22 @@
                             <div class="fecha-alq">
                                 <div class="ingreso">
                                     <label>Fecha ingreso:</label>
-                                    <input type="date" name="fechaingreso">
+                                    <input type="date" name="fechaingreso" value="2021-05-03">
                                 </div>
                                 <div class="egreso">
                                     <label>Fecha egreso:</label>
-                                    <input type="date" name="fechaegreso">
+                                    <input type="date" name="fechaegreso" value="2021-05-10">
                                 </div>
                             </div>
                             <div class="cant-personas">
                                 <div class="adultos">
                                     <label>Adultos:</label>
-                                    <input type="number" name="cantadultos">
+                                    <input type="number" name="cantadultos" value="2">
                                 </div>
                                 <div class="ninos">
 
                                     <label>Niños:</label>
-                                    <input type="number" name="cantninos">
+                                    <input type="number" name="cantninos" value="2">
                                 </div>
                             </div>
                         </div>
@@ -139,6 +139,8 @@
                             <p class="precio">$3.000 por noche</p>
                             <p class="precio-tot">$18.000 total</p>
                         </article>
+                    </div>
+                    <div class="datos-personales-pago">
                         <article class="main-datos-personales">
                             <h4 class="titulo-datos">Datos personales</h4>
                             <div class="datos-personales">
@@ -152,63 +154,64 @@
                                 <h5 class="dato">+54-11-38574086</h5>
                             </div>
                         </article>
-                    </div>
-                    <h4>Datos para el pago:</h4>
-                    <div class="datos-pago">
 
-                        <div class="titular-tta">
-                            <label>Titular de la Tarjeta:</label>
-                            <input type="text" name="titularTarjeta" class="control-pago">
-                        </div>
-                        <div class="tipo-tta">
-                            <label>Tipo de Tarjeta de Crédito:</label>
-                            <select name="tipoTarjeta" class="control-pago">
-                                <option value="visa">Visa</option>
-                                <option value="master">Mastercard</option>
-                                <option value="American">American Express</option>
-                            </select>
-                        </div>
-                        <div class="fecha-expir">
-                            <label>Fecha de expiración:</label>
-                            <select name="mesExpiracion" class="control-pago">
-                                <option value="ene">Enero</option>
-                                <option value="feb">Febrero</option>
-                                <option value="mar">Marzo</option>
-                                <option value="abr">Abril</option>
-                                <option value="may">Mayo</option>
-                                <option value="jun">Junio</option>
-                                <option value="jul">Julio</option>
-                                <option value="ago">Agosto</option>
-                                <option value="sept">Septiembre</option>
-                                <option value="oct">Octubre</option>
-                                <option value="nov">Noviembre</option>
-                                <option value="dic">Diciembre</option>
-                            </select>
+                        <h4>Datos para el pago:</h4>
+                        <div class="datos-pago">
 
-                            <label class="separador">/</label>
-                            <select name="mesExpiracion" class="control-pago">
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
-                                <option value="2025">2025</option>
-                                <option value="2026">2026</option>
-                                <option value="2027">2027</option>
-                                <option value="2028">2028</option>
-                                <option value="2029">2029</option>
-                                <option value="2030">2030</option>
-                                <option value="2031">2031</option>
-                                <option value="2032">2032</option>
-                            </select>
-                        </div>
-                        <div class="codigo-cvc">
-                            <label>Código CVC:</label>
-                            <input type="number" name="codigoCvc" class="control-pago-cvc">
+                            <div class="titular-tta">
+                                <label>Titular de la Tarjeta:</label>
+                                <input type="text" name="titularTarjeta" class="control-pago">
+                            </div>
+                            <div class="tipo-tta">
+                                <label>Tipo de Tarjeta de Crédito:</label>
+                                <select name="tipoTarjeta" class="control-pago">
+                                    <option value="visa">Visa</option>
+                                    <option value="master">Mastercard</option>
+                                    <option value="American">American Express</option>
+                                </select>
+                            </div>
+                            <div class="fecha-expir">
+                                <label>Fecha de expiración:</label>
+                                <select name="mesExpiracion" class="control-pago">
+                                    <option value="ene">Enero</option>
+                                    <option value="feb">Febrero</option>
+                                    <option value="mar">Marzo</option>
+                                    <option value="abr">Abril</option>
+                                    <option value="may">Mayo</option>
+                                    <option value="jun">Junio</option>
+                                    <option value="jul">Julio</option>
+                                    <option value="ago">Agosto</option>
+                                    <option value="sept">Septiembre</option>
+                                    <option value="oct">Octubre</option>
+                                    <option value="nov">Noviembre</option>
+                                    <option value="dic">Diciembre</option>
+                                </select>
+
+                                <label class="separador">/</label>
+                                <select name="mesExpiracion" class="control-pago">
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                </select>
+                            </div>
+                            <div class="codigo-cvc">
+                                <label>Código CVC:</label>
+                                <input type="number" name="codigoCvc" class="control-pago-cvc">
+                            </div>
                         </div>
                     </div>
                     <div class="botones">
                         <button type="submit">Enviar</button>
-                        <button type="reset">reset</button>
+                        <button type="Reset">Reset</button>
                     </div>
                 </form>
 

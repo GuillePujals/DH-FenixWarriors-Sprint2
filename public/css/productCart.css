@@ -236,6 +236,37 @@
                     border: solid #3295ce 1px;
                     padding: 5px;
                 }
+                        .ingreso{
+                            margin: 10px 0;
+                            }
+                            .datos-alq input{
+                                border: solid gray 0.5px;
+                            }
+                            
+                        .egreso{
+                            margin: 10px 0;
+                            
+                        }
+                            .egreso input{
+                                position: relative;
+                                left: 3px;
+                                border: solid gray 0.5px;
+                            }
+                        
+                        .adultos{
+                            margin: 5px 0;
+                        }
+                            .adultos input{
+                                width: 10%;
+                            }
+                        .ninos{
+                            margin: 5px 0;
+                        }
+                            .ninos input{
+                                width: 10%;
+                                position:relative;
+                                left: 9px;
+                            }
                 .condiciones{
                     flex: 1 1 27%;
                     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -281,52 +312,27 @@
                         border:solid #3295ce 1px;
                         padding: 5px;
                        }
+                            .datos-pago input{
+                                border: solid gray 0.5px;
+                            }
+                            .datos-pago select{
+                                border: solid gray 0.5px;
+                            }
+
+                        .titular-tta{
+                            margin: 10px 0;
+                        }
                         .fech-expir{
                             display: block;
                         }
-                        .ingreso{
-                            margin: 10px 0;
-                            }
-                            .datos-alq input{
-                                border: solid gray 0.5px;
-                            }
-                            
-                        .egreso{
-                            margin: 10px 0;
-                            
-                        }
-                            .egreso input{
-                                position: relative;
-                                left: 3px;
-                                border: solid gray 0.5px;
-                            }
-                           
-                        .adultos{
-                            margin: 5px 0;
-                        }
-                            .adultos input{
-                                width: 10%;
-                            }
-                        .ninos{
-                            margin: 5px 0;
-                        }
-                            .ninos input{
-                                width: 10%;
-                                position:relative;
-                                left: 9px;
-                            }
+                        
                         .form-datos-pago{
                         padding: 10px 0 10px 10px;
                         width: 90%;
                         flex-flow: row wrap;
                         margin-top: 0;
-                        
                         }
-
-                        .form-datos-pago label{
-                            margin-right:  10px;
-                        }
-                            .form-datos-pago h4{
+                        .form-datos-pago h4{
                                 margin-bottom: 0;
                             }
                                 .datos-pagos input{
@@ -346,7 +352,21 @@
                         .separador{
                             margin-left: 5px;
                         }
-  
+                .botones{
+                    justify-content: center;
+                    display: flex;
+                }   
+                    .botones button{
+                        background-color: #1259c3;
+                        border: none;
+                        width: 40%;
+                        font-size: 15px;
+                        color: #ffffff;
+                        
+                        border-radius: 4px;
+                        height: 35px;
+                        margin: 10px 5px;
+                    }
 /*================== footer =======================*/
 .redes {
     display: flex;
@@ -395,9 +415,11 @@
             display: flex;
             align-items: center;
         }
-            .legales p{
-                font-family:Roboto;
-            }
+        .legales p{
+            font-family:Roboto;
+            font-size: 12px;
+               
+        }
 
 @media (min-width:860px){
 
@@ -412,7 +434,34 @@
     display: block;
                
 }
-}
+
+    .cond-alq{
+        display:flex;
+        justify-content: space-between;
+    }
+        .datos-alq{
+            flex: 1 1 50%;
+            margin-right: 10%;
+        }
+            .ninos input{
+                position:relative;
+                left: 15px;
+            }
+        .condiciones{
+            flex: 1 1 30%;
+        }
+
+    .datos{
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .form-datos-pago input{
+        font-size: 20px;
+    }
+    .form-datos-pago select{
+        font-size: 20px;
+    }
 .icono-red i{
     font-size: 30px;
 }
@@ -429,7 +478,7 @@
     width: 100%;
 }
         
-
+}
         
 @media(min-width: 1000px){
 .nombre-logo{
@@ -447,4 +496,5 @@
         max-height: 60px;
         max-width: 100px;
     }
+    
 }
