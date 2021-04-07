@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/login.css">
     <script src="https://kit.fontawesome.com/da86db1aac.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,32 +32,23 @@
 
     <section class="form">
         <form method="POST" action="/" class="register">
-            <div class="control-formulario">
-                <input type="email" placeholder="E-mail" name="email" class="control" required>
-            </div>            
-            <div class="control-formulario">
-                <input type="text" placeholder="password" name="contraseña" class="control" required minlength="3">
-            </div>            
-            <div class="control-formulario">
-                    <label for="recordatorio de cuenta"></label>
-                    <input type="checkbox" name="recordatorio" id="recordatorio de cuenta">recuèrdame
-                    </div>
-                    
+                <div class="control-formulario">
+                    <input type="email" placeholder="E-mail" name="email" class="control" required>
+                </div>            
+                <div class="control-formulario">
+                    <input type="text" placeholder="password" name="contraseña" class="control" required minlength="3">
+                </div>            
+                <div class="control-formulario">
+                        <label for="recordatorio de cuenta"></label>
+                        <input type="checkbox" name="recordatorio" id="recordatorio de cuenta">Recuérdame
+                </div>
+                        
                 <div class="buttons">
                     <button type="submit" class="boton-formulario">Acceder</button>
-                </div>
-                    <div class="buttons">
-                        <button type="submit" class="boton-formulario">Ingresa con facebook</button>
-                    </div>
-                    <div class="buttons">
-                        <button type="submit" class="boton-formulario">Ingresa con google</button>
-                    </div>
-                <div class="control-formulario">
-                    <a href=" ">¿olvido su contraseña?</a>
-                    </div>
-      
-                    <div class="buttons">
+                    <button type="submit" class="boton-formulario">Ingresa con facebook</button>
+                    <button type="submit" class="boton-formulario">Ingresa con google</button>
                     <button type="submit" class="boton-formulario">Registrarse</button>
+                    <a href=" ">¿olvido su contraseña?</a>
                 </div>
         
             </form>        
