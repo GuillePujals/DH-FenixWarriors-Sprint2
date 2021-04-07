@@ -31,7 +31,7 @@ app.get('/template/', (req, res) => {
 });
 
 app.get('/prueba/', (req, res) => {
-    res.sendFile(path.join(__dirname, './views/prueba.html'));
+    res.sendFile(path.join(__dirname, './views/porueba.html'));
 });
 
 app.listen(puerto || 3000, function() {
