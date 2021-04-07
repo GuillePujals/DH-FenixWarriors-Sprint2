@@ -17,16 +17,32 @@
 <body>
     <header class="main-header">
         <div class="top-bar">
-            <h2>
-                <a href="#" class="hamburger-button"><i class="fas fa-bars"></i></a>
-            </h2>
+            <input type="checkbox" id="main-hamburger">
+            <label for="main-hamburger"><i class="fas fa-bars"></i>
+            </label>
+            <nav class="menu-hamburger">
+                <ul>
+                    <li><a href="/login">Inicio sesión</a></li>
+                    <li><a href="/register">Registrate</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="">Ofertas próximas</a></li>
+                    <li><a href="">Escapadas Cercanas</a></li>
+                    <li><a href="">Guías turísticas</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Publicar</a></li>
+                </ul>
+            </nav>
+
             <div class="logo-completo">
                 <img src="/images/logo-casas-alquiler.jpg" alt="" class="logo">
                 <h1 class="nombre-logo">Serena</h1>
             </div>
+            <a href="/productCart" class="icono-carrito">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
             <div class="accesos">
-                <a href="">Publicar</a>
-                <a href="">Acceder</a>
+                <a href="/login" class="login">Logueate</a>
+                <a href="/register" class="register">Registrate</a>
             </div>
         </div>
     </header>
@@ -36,16 +52,49 @@
 
 
     <section class="main-body">
+       <!--  
 
         <div class="sub-main-body">
             <p class="donde"><i class="fas fa-search-location"></i>A donde vamos?</p>
-            <p class="cuando"><i class="fas fa-search-location"></i>Cuando?</p>
-            <p class="cuantos"><i class="fas fa-search-location"></i>Cuantos somos?</p>
+            <p class="cuando"><i class="far fa-calendar-alt"></i>Cuando?</p>
+            <p class="cuantos"><i class="fas fa-user-check"></i></i>Cuantos somos?</p>
             <p id="buscar">Buscar</p>
         </div>
-        <nav>
+        --> 
 
-        </nav>
+        <form action="" method="POST" class="formBuscar">
+            <input type="text" name="donde" placeholder=" A donde vamos?" class="inp1">
+            <input type="date" name="fecha" class="inp2">
+            <select name="cuantos" class="inp3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4 o más</option>
+            </select>
+            <button type="submit" id="buscar">Buscar</button>
+        </form>
+
+
+        <h3 class="titulo-ofertas">Ofertas destacadas</h3>
+        <div class="ofertas-destacadas">
+
+            <article class="oferta-destacada-1">
+                <a href="/productDetail">22% Off</a>
+            </article>
+            <article class="oferta-destacada-2">
+                <p>15% Off</p>
+            </article>
+            <article class="oferta-destacada-3">
+                <p>12% Off</p>
+            </article>
+            <article class="oferta-destacada-4">
+                <p>10% Off</p>
+            </article>
+
+        </div>
+
+
+
         <h3 class="titulo-destinos">Destinos destacados</h3>
         <div class="destinos-destacados">
             <article class="destindo-destacado-1">
@@ -57,13 +106,18 @@
             <article class="destindo-destacado-3">
                 <p>Villa Gessel</p>
             </article>
+            <article class="destindo-destacado-4">
+                <p>Las Grutas</p>
+            </article>
         </div>
 
     </section>
-    <div class="suscripcion">
-        <h3>Suscribite</h3>
-        <p>Ingresar e-mail</p>
-    </div>
+
+
+    <form action="" method= "POST" class="suscripcion">
+        <input type="email" placeholder="Ingresar e-mail">
+        <button type="submit">Enviar</button>
+    </form>
 
 
 
@@ -88,16 +142,24 @@
             <a type="button" style="display: block;"></a>
 
             <div class="lista-footer">
-                <h4>Principal</h4>
-                <a href="/">Inicio</a>
-                <a href="/contacto">Cantacto</a>
-                <a href="/publicar">Publicar</a>
-                <a href="/blog">Blog</a>
-                <h4>Secciones</h4>
-                <a href="/ofertas">Ofertas próximas</a>
-                <a href="/escapadasCercanas">Escapadas Cercanas</a>
-                <a href="/sorteos">Sorteos</a>
-                <a href="/feriados">Feriados</a>
+                <div class="ul-principal">
+                    <h4>Principal</h4>
+                    <ul type="none">
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="/contacto">Cantacto</a></li>
+                        <li><a href="/publicar">Publicar</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="ul-secciones">
+                    <h4>Secciones</h4>
+                    <ul type="none">
+                        <li><a href="/ofertas">Ofertas próximas</a></li>
+                        <li><a href="/escapadasCercanas">Escapadas Cercanas</a></li>
+                        <li><a href="/sorteos">Sorteos</a></li>
+                        <li><a href="/feriados">Feriados</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
