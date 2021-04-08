@@ -194,6 +194,7 @@
         }
             .legales p{
                 font-family:Roboto;
+                font-size: 12px;
             }
 
 @media (min-width:860px){
@@ -219,8 +220,6 @@
                     .logo-completo{
                         margin-left: 20px;
                     }
-                
-            }
             
             .icono-red i{
                 font-size: 30px;
@@ -237,7 +236,7 @@
                 justify-content: space-around;
                 width: 100%;
             }
-            
+}
             
 @media(min-width: 1000px){
                 .nombre-logo{

@@ -212,6 +212,7 @@
         }
             .legales p{
                 font-family:Roboto;
+                font-size: 12px;
             }
 
 
@@ -239,13 +240,12 @@
             margin-left: 20px;
         }
     
-}
+
 
 .icono-red i{
     font-size: 30px;
 }
-
-    .accesos a{
+   .accesos a{
         color: #3295ce;
         text-decoration: none;
         font-weight: bold;
@@ -256,6 +256,9 @@
     justify-content: space-around;
     width: 100%;
 }
+}
+
+ 
 
 
 @media(min-width: 1000px){
